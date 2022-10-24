@@ -15,7 +15,7 @@ buttonCalcular.addEventListener('click', (event) => {
         .then((data) => {
             const entries = Object.entries(data)
             const valorEmDolar = entries[0][1].bid
-            converter(parseFloat(valorEmDolar).toFixed(3), parseFloat(valorDigDolar).toFixed(3))
+            converter(parseFloat(valorEmDolar).toFixed(2), parseFloat(valorDigDolar).toFixed(2))
         })
     
 })
