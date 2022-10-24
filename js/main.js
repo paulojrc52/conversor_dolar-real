@@ -23,5 +23,5 @@ buttonCalcular.addEventListener('click', (event) => {
 function converter(valorCotação, valorDigitado) {
     const resFinal = valorCotação * valorDigitado
 
-    resultado.innerHTML = resFinal.toFixed(2)
+    resultado.innerHTML = `R$${resFinal.toFixed(2)}`
 }
